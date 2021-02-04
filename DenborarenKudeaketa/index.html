@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Denboraren Kudeaketa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ShowerTemplate/shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Denboraren Kudeaketa</h1>
+        <p>Mikel Egaña Aranguren</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Gestión de Proyectos (GP)</h2>
+        <h3>Denboraren Kudeaketa: Gantt, PERT, CPM</h3>
+        <p>Mikel Egaña Aranguren (<a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a>)</p>
+        <!-- <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p> -->
+        <img src="../ShowerTemplate/pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Denboraren Kudeaketa</h2>
+        <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
+        <p><a href="https://github.com/mikel-egana-aranguren/EHU-GP-01">https://github.com/mikel-egana-aranguren/EHU-GP-01</a></p>
+        <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Denboraren Kudeaketa</h2>
+        <p>Ya sabemos:
+            <ul>
+                <li>Qué tareas hay que realizar</li>
+                <li>Cuánto tiempo necesitamos para cada tarea</li>
+                <li>Quién va a realizar cada tarea</li>
+            </ul>
+        </p>
+        <p>¿Cómo las distribuimos en el tiempo?</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Diagrama de Gantt</h2>
+        <img src="pictures-gp-01/Ganttproject-house-building-sample.png" alt="Diagrama de Gantt" width="50%" border="1px solid #555"> <p style="text-align:right;font-size:30%;"><a href="https://commons.wikimedia.org/w/index.php?curid=10593040">De GanttProject Developers - GanttProject Developers, CC BY-SA 3.0</a></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Diagrama de Gantt</h2>
+        <ul>
+        <li>Cuadro bidimensional:
+            <ul>
+                <li>Eje horizontal: tiempo</li>
+                <li>Eje vertical: tareas</li>
+                <li>Tarea: bloque rectangular (longitud = duración)</li>
+                <li>Posición del bloque: inicio y fin de tarea</li>
+            </ul>
+        </li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Diagrama de Gantt</h2>
+        <ul>
+        <li>Sólo representa la elección del autor</li>
+        <li>No refleja (ni justifica ni permite conocer):
+            <ul>
+                <li>Orden óptimo de las actividades</li>
+                <li>Plazo mínimo de ejecución del proyecto</li>
+                <li>Efectos de retrasos</li>
+            </ul>
+        <li>Para ello se usan técnicas de planificación como PERT, CPM, ROY, Precedencias, ...</li>
+        </li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Técnicas de planificación: Objetivos</h2>
+        <ul>
+        <li>Determinar qué tareas son necesarias y cuándo</li>
+        <li>Buscar el plazo mínimo de ejecución del proyecto</li>
+        <li>Buscar ligaduras temporales entre tareas</li>
+        <li>Identificar las tareas críticas (Si se retrasan, afectan a todo el proyecto)</li>
+        <li>Identificar el camino crítico (Formado por tareas críticas)</li>
+        <li>Detectar holguras (Tiempo que puede retrasarse una tarea sin afectar al proyecto)</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>PERT (Program Evaluation and Review Techniques)</h2>
+        <ul>
+        <li>Hay que ordenar las tareas:
+            <ul>
+                <li>¿Qué se puede hacer ahora?</li>
+                <li>¿Qué tiene que estar hecho ya?</li>
+                <li>¿Qué podría hacerse a la vez?</li>
+                <li>¿Qué debe ser lo siguiente?</li>
+            </ul>  
+        </li>  
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>PERT (Program Evaluation and Review Techniques)</h2>
+        <ul> 
+        <li>El resultado es un grafo donde:
+            <ul>
+                <li>Los nodos representan momentos en el tiempo (sucesos)</li>
+                <li>Los arcos representan tareas (Cada tarea aparece una única vez en el grafo) </li>
+                <li>Sólo puede haber un arco (directo) entre dos nodos</li>
+            </ul>
+        </li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>PERT: Tipos de Precedencias</h2>
+
+        <img src="pictures-gp-01/precedencia-lineal.png" alt="Tipos de precedencias" width="95%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>PERT: Recoger Precedencias</h2>
+        <p><b>Matriz de encadenamientos</b>: para comenzar la tarea de la fila, finalizar la de la columna</p>
+        <img src="pictures-gp-01/MatrizEncadenamientos.png" alt="Matriz de encadenamientos" width="30%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>PERT: Recoger Precedencias</h2>
+        <p><b>Cuadro de precedentes</b>: tareas, precedentes</p>
+        <img src="pictures-gp-01/CuadroPrecedentes.png" alt="Cuadro de precedentes" width="30%">
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/mikel-egana-aranguren/EHU-GP-01">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="../ShowerTemplate/shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
