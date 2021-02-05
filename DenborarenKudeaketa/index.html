@@ -19,7 +19,7 @@
     </header>
 
     <section class="slide" id="cover">
-        <h2>Gestión de Proyectos (GP)</h2>
+        <h2>Proiektuen Kudeaketa (PK)</h2>
         <h3>Denboraren Kudeaketa: Gantt, PERT, CPM</h3>
         <p>Mikel Egaña Aranguren (<a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a>)</p>
         <!-- <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p> -->
@@ -35,71 +35,71 @@
 
     <section class="slide" id="cover">
         <h2>Denboraren Kudeaketa</h2>
-        <p>Ya sabemos:
+        <p>Dagoeneko badakigu:
             <ul>
-                <li>Qué tareas hay que realizar</li>
-                <li>Cuánto tiempo necesitamos para cada tarea</li>
-                <li>Quién va a realizar cada tarea</li>
+                <li>Zein jarduera egin behar diren</li>
+                <li>Zenbat denbora behar dugun jarduera bakoitzeko</li>
+                <li>Nor arduratuko den jarduera bakoitzaz</li>
             </ul>
         </p>
-        <p>¿Cómo las distribuimos en el tiempo?</p>
+        <p>Nola banatuko ditugu denboran zehar?</p>
     </section>
 
     <section class="slide" id="cover">
-        <h2>Diagrama de Gantt</h2>
-        <img src="pictures-gp-31/Ganttproject-house-building-sample.png" alt="Diagrama de Gantt" width="50%" border="1px solid #555"> <p style="text-align:right;font-size:30%;"><a href="https://commons.wikimedia.org/w/index.php?curid=10593040">De GanttProject Developers - GanttProject Developers, CC BY-SA 3.0</a></p>
+        <h2>Gantt Diagrama</h2>
+        <img src="pictures-gp-31/Ganttproject-house-building-sample.png" alt="Gantt Diagrama" width="50%" border="1px solid #555"> <p style="text-align:right;font-size:30%;"><a href="https://commons.wikimedia.org/w/index.php?curid=10593040">De GanttProject Developers - GanttProject Developers, CC BY-SA 3.0</a></p>
     </section>
 
     <section class="slide" id="cover">
-        <h2>Diagrama de Gantt</h2>
+        <h2>Gantt Diagrama</h2>
         <ul>
-        <li>Cuadro bidimensional:
+        <li>Bi dimentsiotako koadroa:
             <ul>
-                <li>Eje horizontal: tiempo</li>
-                <li>Eje vertical: tareas</li>
-                <li>Tarea: bloque rectangular (longitud = duración)</li>
-                <li>Posición del bloque: inicio y fin de tarea</li>
+                <li>Ardatz horizontalean: denbora</li>
+                <li>Ardatz berticalean: jarduerak</li>
+                <li>Jarduera bakoitza bloke laukizuzena (Luzera = iraupena)</li>
+                <li>Blokearen tokia: hasiera eta bukaera</li>
             </ul>
         </li>
         </ul>
     </section>
 
     <section class="slide" id="cover">
-        <h2>Diagrama de Gantt</h2>
+        <h2>Gantt Diagrama</h2>
         <ul>
-        <li>Sólo representa la elección del autor</li>
-        <li>No refleja (ni justifica ni permite conocer):
+        <li>Egilearen aukeraketa adierazten du soilik</li>
+        <li>Ez du adierazten eta ezin dugu jakin:
             <ul>
-                <li>Orden óptimo de las actividades</li>
-                <li>Plazo mínimo de ejecución del proyecto</li>
-                <li>Efectos de retrasos</li>
+                <li>Jardueren orden optimoa</li>
+                <li>Proiektua garatzeko denbora minimoa</li>
+                <li>Atzerapenen ondorioak</li>
             </ul>
-        <li>Para ello se usan técnicas de planificación como PERT, CPM, ROY, Precedencias, ...</li>
+        <li>Horretarako planifikazio teknikak erabiltzen dira, hala nola PERT, CPM, ROY, Aurrekotasunak, ...</li>
         </li>
         </ul>
     </section>
 
     <section class="slide" id="cover">
-        <h2>Técnicas de planificación: Objetivos</h2>
+        <h2>Planifikazio teknikak: Helburuak</h2>
         <ul>
-        <li>Determinar qué tareas son necesarias y cuándo</li>
-        <li>Buscar el plazo mínimo de ejecución del proyecto</li>
-        <li>Buscar ligaduras temporales entre tareas</li>
-        <li>Identificar las tareas críticas (Si se retrasan, afectan a todo el proyecto)</li>
-        <li>Identificar el camino crítico (Formado por tareas críticas)</li>
-        <li>Detectar holguras (Tiempo que puede retrasarse una tarea sin afectar al proyecto)</li>
+        <li>Zehaztu ze jarduera diren beharrezko eta noizko</li>
+        <li>Proiektua garatzeko denbora minimoa aurkitu</li>
+        <li>Jardueren aretko denbora-murriztapenak zehaztu</li>
+        <li>Jarduera kritikoak identifikatu (Atzeratzen badira proiektu osoan dute eragina)</li>
+        <li>Bide kritikoa identifikatu (Jarduera kritikoz osatua dagoena)</li>
+        <li>Jardueren lasaierak identifikatu (Jarduera bat atzeratu daitekeena proiektu osoan eraginik gabe)</li>
         </ul>
     </section>
 
     <section class="slide" id="cover">
         <h2>PERT (Program Evaluation and Review Techniques)</h2>
         <ul>
-        <li>Hay que ordenar las tareas:
+        <li>Jarduerak ordenatu behar dira:
             <ul>
-                <li>¿Qué se puede hacer ahora?</li>
-                <li>¿Qué tiene que estar hecho ya?</li>
-                <li>¿Qué podría hacerse a la vez?</li>
-                <li>¿Qué debe ser lo siguiente?</li>
+                <li>Zer egin daiteke orain?</li>
+                <li>Zer egon behar da dagoeneko eginda?</li>
+                <li>Batera egin al daitezke?</li>
+                <li>Zer izango da hurrengoa?</li>
             </ul>  
         </li>  
         </ul>
@@ -108,32 +108,32 @@
     <section class="slide" id="cover">
         <h2>PERT (Program Evaluation and Review Techniques)</h2>
         <ul> 
-        <li>El resultado es un grafo donde:
+        <li>Emaitza garfo bat da, non:
             <ul>
-                <li>Los nodos representan momentos en el tiempo (sucesos)</li>
-                <li>Los arcos representan tareas (Cada tarea aparece una única vez en el grafo) </li>
-                <li>Sólo puede haber un arco (directo) entre dos nodos</li>
+                <li>Adabegiek mugarriak adierazten dituzte ("Gertaerak")</li>
+                <li>Arkuek jarduerak adierazten dituzte (Jarduera bakoitza behin soilik agertzen da grafoan) </li>
+                <li>Gertaera batetik beste gertaera batera arku bat soilik egongo dat gehienez</li>
             </ul>
         </li>
         </ul>
     </section>
 
     <section class="slide" id="cover">
-        <h2>PERT: Tipos de Precedencias</h2>
+        <h2>PERT: Aurrekotasuna motak</h2>
 
-        <img src="pictures-gp-31/precedencia-lineal.png" alt="Tipos de precedencias" width="95%">
+        <img src="pictures-gp-31/precedencia-lineal.png" alt="Aurrekotasuna motak" width="95%">
     </section>
 
     <section class="slide" id="cover">
-        <h2>PERT: Recoger Precedencias</h2>
-        <p><b>Matriz de encadenamientos</b>: para comenzar la tarea de la fila, finalizar la de la columna</p>
-        <img src="pictures-gp-31/MatrizEncadenamientos.png" alt="Matriz de encadenamientos" width="30%">
+        <h2>PERT: Aurrekotasunak jaso</h2>
+        <p><b>Kate-matrizea</b>: lerroaren jarduea hasteko zutabearen jarduera bukatuta egon behar du</p>
+        <img src="pictures-gp-31/MatrizEncadenamientos.png" alt="Kate-matrizea" width="30%">
     </section>
 
     <section class="slide" id="cover">
-        <h2>PERT: Recoger Precedencias</h2>
-        <p><b>Cuadro de precedentes</b>: tareas, precedentes</p>
-        <img src="pictures-gp-31/CuadroPrecedentes.png" alt="Cuadro de precedentes" width="30%">
+        <h2>PERT: Aurrekotasunak jaso</h2>
+        <p><b>Aurrekari-koadroa</b>: jarduerak, aurrekariak</p>
+        <img src="pictures-gp-31/CuadroPrecedentes.png" alt="Aurrekari-koadroa" width="30%">
     </section>
 
     <footer class="badge">
