@@ -10,6 +10,11 @@
             --slide-ratio: calc(16 / 9);
         }
     </style>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </head>
 <body class="shower list">
 
@@ -144,7 +149,7 @@
 
     <section class="slide" id="cover">
         <h2>Jarduera fiktizioak</h2>
-        <img src="pictures-gp-01/ActividadesFicticias.png" alt="Jarduera fiktizioak" width="60%">
+        <img src="pictures-gp-31/ActividadesFicticias.png" alt="Jarduera fiktizioak" width="60%">
     </section>
 
     <section class="slide" id="cover">
@@ -155,7 +160,139 @@
 
     <section class="slide" id="cover">
         <h2>Jarduera fiktizioak</h2>
-        <img src="pictures-gp-01/ActividadesFicticias2.png" alt="Jarduera fiktizioak 2" width="60%">
+        <img src="pictures-gp-31/ActividadesFicticias2.png" alt="Jarduera fiktizioak 2" width="60%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT)</h2>
+        <p>Lasaiera totala kalkulatu</p>
+        <p>Lasaiera librea kalkulatu</p>
+        <p>Bide kritikoa aurkitu</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT)</h2>
+        <p>Demagun proiektua honako aurrekariekin:</p>
+        <img src="pictures-gp-31/EjemploProyectoPERT.png" alt="PERT Proiektu Adibidea" width="30%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT)</h2>
+        <p>[<b>Zuek egiteko</b>] dependentzien grafoa eraiki</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT)</h2>
+        <p>Dependentzien grafoa</p>
+        <img src="pictures-gp-31/GrafoEjemploProyecto.png" alt="PERT Proiektu Adibide grafoa" width="80%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT)</h2>
+        <p>Adabegiak (gertaerak) zenbatuko ditugu (ezkerretik eskuinera eta goitik behera)</p>
+        <img src="pictures-gp-31/GrafoNumeradoEjemploProyecto.png" alt="PERT Proiektu Adibide grafoa zenbakiekin" width="80%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT)</h2>
+        <p>Jarduera bakoitzaren iraupena kalkulatu</p>
+        
+        <p>\[ I = {E_B+4E_Z+E_E \over 6} \]</p>
+
+        <p>
+            <ul>
+                <li>E<sub>B</sub> = Estimazio Baikorra</li>
+                <li>E<sub>M</sub> = Estimazio Ziurrena</li>
+                <li>E<sub>P</sub> = Estimazio Ezkorra</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT)</h2>
+        <p>Jarduera bakoitzaren iraupena adierazi:</p>
+        <p><img src="pictures-gp-31/CuadroDuraciones.png" alt="PERT Proiektu Adibidea iraupenak" width="20%"></p>
+        <p><img src="pictures-gp-31/GrafoDuracionesEjemploProyecto.png" alt="PERT Proiektu Adibidea iraupenak grafoa" width="60%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT)</h2>
+        <p>Gertaera bakoitzeko, kalkulatu:</p>
+        <p>
+            <ul>
+                <li>Earliest Event Time (EET)</li>
+                <li>Latest Event Time (LET)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT): EET</h2>
+        <p>Gertaera bakoitzeko, kalkulatu:</p>
+        <p>
+            <ul>
+                <li>Hasierako gertaeraren EET-a 0 da</li>
+                <li>Gainontzeko gertaerentzako:
+                    <ul>
+                        <li>Gertaerara iristen den jarduera bakoitzeko, batu jardueraren iraupena eta jarduera irten den gertaeraren EET-a</li>
+                        <li>Aukeratu lortutako EET-rik handiena</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT): EET/h2>
+        <p><img src="pictures-gp-31/EET.png" alt="PERT EET" width="80%"></p>
+    </section>
+
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT): LET</h2>
+        <p>Gertaera bakoitzeko, kalkulatu:</p>
+        <p>
+            <ul>
+                <li>Hasierako gertaeraren LET-a bere EET-a da</li>
+                <li>Gainontzeko gertaerentzako:
+                    <ul>
+                        <li>Gertaeratik irtetzen den jarduera bakoitzaren LET-a iristen den gertaerari kendu</li>
+                        <li>Aukeratu lortutako LET-ik txikiena</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT): LET</h2>
+        <p><img src="pictures-gp-31/LET.png" alt="PERT LET" width="80%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT): Lasaiera Librea</h2>
+        <p>Jarduera baten Lasaiera Librea: helburuko gertaeraren EET-ari jatorrizko gertaeraren EET-a gehi jardueraren iraupena kendu:</p>
+        <p>\[ H_{ij}^L = EET_j - (EET_i + D_{ij}) \]</p>
+        <p>Lasaiera libreak adierazten du zenbat denbora unitate atzeratu daitekeen jarduera hori proiektuaren bukaera datan eta beste jardueren hasiera datan eraginik izan gabe </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT): Lasaiera Totala</h2>
+        <p>Helburuko gertaeraren LET-ari jatorrizko jardueraren EET-a gehi jardueraren iraupena kendu:</p>
+        <p>\[ H_{ij} = LET_j - (EET_i + D_{ij}) \]</p>
+        <p>Lasaiera totalak adierazten du zenbat denbora unitate atzeratu daitekeen jarduera hori proiektuaren iraupenean eraginik izan gabe </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT): Lasaieren Kalkulua</h2>
+        <p>Lasaierak kalkulatzerakoan, gertaera N batetik ateratzen diren jarduera guztiak fikziozkoak badira, gertaera hori ez dugu kontuan edukiko</p>
+        <p>Bere ordez jarduera fiktizioa heltzen den gertaeraren denborak erabiliko dira. Bat baino gehiago badaude, N gertaerako LET-a jartzeko erabili dena aukeratuko da</p>
+        <p>Beharrezkoak ez diren jarduera fiktizioak erabiltzea ez da akatsa, baina kalkuluak zailtzen ditu eta ekiditen saiatu beharko gara</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazioa (PERT): Bide Kritikoa</h2>
+        <p><img src="pictures-gp-31/RutaCritica.png" alt="Bide Kritikoa 1" width="80%"></p>
     </section>
 
 
