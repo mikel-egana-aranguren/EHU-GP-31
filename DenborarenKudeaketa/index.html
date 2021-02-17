@@ -314,6 +314,78 @@
         <p>CPM determinista da eta PERT probabilistikoa</p>
     </section>
 
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: ROY</h2>
+        <p>Grafo bat sortzen da ere, baina:
+            <ul>
+                <li>Nodoak jarduerak dira</li>
+                <li>Arkuek aurrekotasuna adierazten dute</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak (ROY): Aurrekotasun motak</h2>
+        <img src="pictures-gp-31/ROYTiposPrecedencias.png" alt="Aurrekotasun motak" width="80%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak (ROY): Aurrekotasun motak</h2>
+        <p>Grafoa eraikitzeko bi jarduera osagarri gehitu behar dira:
+            <ul>
+                <li>Hasierako jarduera</li>
+                <li>Bukaerako jarduera</li>
+            </ul>
+        </p>
+        <p>Gure benetako jardueren artean lehenengoa izan daitekeen jarduera bakarra badago ez dugu hasierako jarduerarik sortuko. Era berean, azkena izan daitekeen jarduera bakarra badago ez dugu bukaerako jarduera sortuko</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak (ROY)</h2>
+        <p>ROY-k ere aurrekotasun taula edo kate-matrizea erabiltzen du</p>
+        <img src="pictures-gp-31/PrecedenciasROY.png" alt="ROY aurrekotasunak" width="30%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak (ROY)</h2>
+        <p>Nodo bakoitza lauki batekin errepresentatzen da: </p>
+        <p><img src="pictures-gp-31/NodoROY.png" alt="ROY nodoa" width="80%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak (ROY)</h2>
+        <p>Arkuen gainean, arkua ateratzen den jardueraren iraupena (atzerapena barnean eduki dezake)</p>
+        <p>Jardueraren hasteko denbora minimoa kalkulatzeko:
+            <ul>
+                <li>Jarduerara iristen den arku bakoitzeko, arku hori ateratzen den jardueraren hasteko denbora minimoa eta arkuaren balioa batu</li>
+                <li>Batuketa guztien maximoa aukeratu</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak (ROY)</h2>
+        <p>Jardueraren hasteko denbora maximoa:
+            <ul>
+                <li>Nodotik ateratzen den arku bakoitzaren balioa kendu behar zaio arku hori iristen den jardueraren hasteko denbora maximoari</li>
+                <li>Kenketa horien minimoa hartu</li>
+            </ul>
+        </p>
+    </section>
+    
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak (ROY)</h2>
+        <p>K jardueraren lasaiera totala bere hasteko denbora maximo eta minimoaren arteko diferentzia da:</p>
+        <p>\[ L_{K}^T = T_{K} - t_{K} \]</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak (ROY)</h2>
+        <p>K jardueraren lasaiera librea:</p>
+        <p>\[ H_{K}^L = min[t_{P} - t_{K} - D_{KP}]\forall P \]</p>
+        <p>Non <i>P</i> K-ren ondoren dauden jarduerak diren eta I <sub>kp</sub> K eta P jarduerak lotzen dituen arkuaren balioa</p>
+    </section>
+
 
     <!-- FOOTER -->
 
