@@ -23,6 +23,8 @@
         <p>Mikel Egaña Aranguren</p>
     </header>
 
+    <!-- 1 Eguna -->
+
     <section class="slide" id="cover">
         <h2>Proiektuen Kudeaketa (PK)</h2>
         <h3>Denboraren Kudeaketa: Gantt, PERT, CPM</h3>
@@ -314,6 +316,8 @@
         <p>CPM determinista da eta PERT probabilistikoa</p>
     </section>
 
+    <!-- 2 Eguna-->
+
     <section class="slide" id="cover">
         <h2>Planifikazio teknikak: ROY</h2>
         <p>Grafo bat sortzen da ere, baina:
@@ -385,6 +389,176 @@
         <p>\[ H_{K}^L = min[t_{P} - t_{K} - D_{KP}]\forall P \]</p>
         <p>Non <i>P</i> K-ren ondoren dauden jarduerak diren eta I <sub>kp</sub> K eta P jarduerak lotzen dituen arkuaren balioa</p>
     </section>
+
+    <!-- 3 Eguna-->
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Jardueren grafoaren egitura ROY-ren berdina da:
+            <ul>
+                <li>Nodoak jarduerak dira</li>
+                <li>Arkuek jardueren aurrekotasuna adierazten dute</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Lau aurrekotasun mota onartzen ditu:
+            <ul>
+                <li>Amaiera - Hasiera (AH)</li>
+                <li>Hasiera - Hasiera (HH)</li>
+                <li>Amaiera - Amaiera (AA)</li>
+                <li>Hasiera - Amaiera (HA)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p><img src="pictures-gp-01/Aurrekotasunak.png" alt="Aurrekotasunak" width="80%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Amaiera - Hasiera (Aukera: D atzerapenarekin): B bakarrik has daiteke A bukatu eta D denbora-unitate pasa ondoren </p>
+        <p><img src="pictures-gp-31/PrecedenciaFC.png" alt="Amaiera - Hasiera (Aukera D atzerapenarekin)" width="80%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Hasiera - Hasiera (Aukera: D atzerapenarekin): B bakarrik has daiteke A hasi eta D denbora-unitate pasa ondoren </p>
+        <p><img src="pictures-gp-31/PrecedenciaCC.png" alt="Hasiera - Hasiera (Aukera: D atzerapenarekin)" width="65%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Amaiera - Amaiera (Aukera: D atzerapenarekin): B bakarrik bukatu daiteke A bukatu eta D denbora-unitate pasa ondoren </p>
+        <p><img src="pictures-gp-31/PrecedenciaFF.png" alt="Amaiera - Amaiera (Aukera: D atzerapenarekin)" width="55%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Hasiera - Amaiera (Aukera: D atzerapenarekin): B bakarrik bukatu daiteke A hasi eta D denbora-unitate pasa ondoren </p>
+        <p><img src="pictures-gp-31/PrecedenciaCF.png" alt="Hasiera - Amaiera (Aukera: D atzerapenarekin)" width="55%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Grafoa eraikitzeko: 
+            <ul>
+                <li>Hasierako jarduerak identifikatu</li>
+                <li>Grafoaren egitura sortu jardueren exekuzio-sekuentzia kontuan hartuz</li>
+                <li>Denbora inposatuak existitzen badira, adierazi</li>
+                <li>Atzerapenak adierazi</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Lehenengo ES eta EF kalkulatuko ditugu: 
+            <ul>
+                <li>Hasierako jarduerentzat: ES=0, EF=bere iraupena</li>
+                <li>Besteentzat (adibidea: X jarduerarentzat): X-ren aurrekariak eta data inposatuak begiratu. Bakoitzaren eraginez ES eta EF bat kalkulatu (ikus ondorengo gardenkia) </li>
+                <li>(ES,EF) bikoterik <u>handiena</u> izango dira X jardueraren ES eta EF</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>ES eta EF-ren kalkulua aurrekotasun/daten eraginez: 
+            <ul>
+                <li>HH aurrekotasunentzat (A jard): ES(X)_a=ES(A)+Da; EF(X)_a=ES(X)_a+Ix</li>
+                <li>AH aurrekotasunentzat (B jard): ES(X)_b=EF(B)+Db; EF(X)_b=ES(X)_b+Ix</li>
+                <li>HA aurrekotasunentzat (C jard): EF(X)_c=ES(C)+Dc; ES(X)_c=EF(X)_c-Ix</li>
+                <li>AA aurrekotasunentzat (D jard): EF(X)_d=ES(D)+Dd; ES(X)_d=EF(X)_d-Ix</li>
+                <li>PS: ES(X)_ps=PS; EF(X)_ps=ES(X)_ps+Ix</li>
+                <li>PF: EF(X)_pf=PF; ES(X_pf)=EF(X)_pf-Ix</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>ES eta EF-ren kalkulua aurrekotasun/daten eraginez: </p>
+        <p><img src="pictures-gp-31/ESEFX.png" alt="ES eta EF-ren kalkulua aurrekotasun/daten eraginez" width="55%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Gero LS eta LF kalkulatuko ditugu: 
+            <ul>
+                <li>Bukaerako jarduerentzat:
+                    <ul>
+                        <li>LF = diagramako EF handiena</li>
+                        <li>LS = LF – jardueraren iraupena</li>
+                    </ul>
+                </li>
+                <li>Besteentzat (adibidea: X jarduerarentzat): X-ren ondorengoak eta data inposatuak begiratu. Bakoitzaren eraginez LS eta LF bat kalkulatu (ikus ondorengo gardenkia)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Gero LS eta LF kalkulatuko ditugu (jarraipena): 
+            <ul>
+                <li>(LS,LF) bikoterik <u>txikiena</u> izango dira X jardueraren LS eta LF (Salbuespen bat dago: Beti bete behar da ES<=LS eta EF<=LF, baina data inposatuen ondorioz batzutan ez da beteko eta zuzendu beharko da 1. ariketa)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>LS eta LF-ren kalkulua: 
+            <ul>
+                <li>HH aurrekotasunentzat (A jard): LS(X)_a=LS(A)-Da; LF(X)_a=LS(X)_a+Ix</li>
+                <li>AH aurrekotasunentzat (B jard): LF(X)_b=LS(B)-Db; LS(X)_b=LF(X)_b-Ix</li>
+                <li>HA aurrekotasunentzat (C jard): LS(X)_c=LF(C)-Dc; LF(X)_c=LS(X)_c+Ix</li>
+                <li>AA aurrekotasunentzat (D jard): LF(X)_d=LF(D)-Dd; LS(X)_d=LF(X)_d-Ix</li>
+                <li>PS: LS(X)_ps=PS; LF(X)_ps=LS(X)_ps+Ix</li>
+                <li>PF: LF(X)_pf=PF; LS(X)_pf=EF(X)_pf-Ix</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>LS eta LF-ren kalkulua: </p>
+        <p><img src="pictures-gp-31/LSLFX.png" alt="LS eta LF-ren kalkulua" width="55%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Jardueren lasaiera: 
+            <ul>
+                <li>K jardueraren lasaiera totala:
+                    \[ L_{K}^T = LF_{K} - EF_{K} \]
+                </li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planifikazio teknikak: Aurrekotasunak</h2>
+        <p>Jardueren lasaiera: 
+            <ul>
+                <li>Lasaiera librea: ondorengoen artean txikiena:
+                    <ul>
+                        <li>ES (hurrengoa) - (EF + D), erlazioa AH bada </li>
+                        <li>ES (hurrengoa) - (ES + D), erlazioa HH bada </li>
+                        <li>EF (hurrengoa) - (EF + D), erlazioa AA bada </li>
+                        <li>EF (hurrengoa) - (ES + D), erlazioa HA bada </li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    </section>
+
+
+
 
 
     <!-- FOOTER -->
