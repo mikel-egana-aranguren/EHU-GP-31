@@ -27,7 +27,7 @@
 
     <section class="slide" id="cover">
         <h2>Proiektuen Kudeaketa (PK)</h2>
-        <h3>Denboraren Kudeaketa: Gantt, PERT, CPM</h3>
+        <h3>Denboraren Kudeaketa: Gantt, PERT, CPM, ROY, Aurrekotasunak</h3>
         <p>Mikel Egaña Aranguren (<a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a>)</p>
         <!-- <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p> -->
         <img src="../ShowerTemplate/pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
@@ -36,7 +36,7 @@
     <section class="slide" id="cover">
         <h2>Denboraren Kudeaketa</h2>
         <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
-        <p><a href="https://github.com/mikel-egana-aranguren/EHU-GP-01">https://github.com/mikel-egana-aranguren/EHU-GP-01</a></p>
+        <p><a href="https://github.com/mikel-egana-aranguren/EHU-GP-31">https://github.com/mikel-egana-aranguren/EHU-GP-31</a></p>
         <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
     </section>
 
@@ -94,7 +94,7 @@
         <li>Jardueren arteko denbora-murriztapenak zehaztu</li>
         <li>Jarduera kritikoak identifikatu (Atzeratzen badira proiektu osoan dute eragina)</li>
         <li>Bide kritikoa identifikatu (Jarduera kritikoz osatua dagoena)</li>
-        <li>Jardueren lasaierak identifikatu (Jarduera bat atzeratu daitekeena proiektu osoan eraginik gabe)</li>
+        <li>Jardueren lasaierak identifikatu (Proiektu osoan eraginik gabe atzeratu daitezkeen jarduerak)</li>
         </ul>
     </section>
 
@@ -126,13 +126,13 @@
     </section>
 
     <section class="slide" id="cover">
-        <h2>PERT: Aurrekotasuna motak</h2>
+        <h2>PERT: Aurrekotasun motak</h2>
         <img src="pictures-gp-31/precedencia-lineal.png" alt="Aurrekotasuna motak" width="90%">
     </section>
 
     <section class="slide" id="cover">
         <h2>PERT: Aurrekotasunak jaso</h2>
-        <p><b>Kate-matrizea</b>: lerroaren jarduea hasteko zutabearen jarduera bukatuta egon behar du</p>
+        <p><b>Kate-matrizea</b>: lerroaren jarduera hasteko zutabearen jarduera bukatuta egon behar du</p>
         <img src="pictures-gp-31/MatrizEncadenamientos.png" alt="Kate-matrizea" width="30%">
     </section>
 
@@ -222,8 +222,8 @@
         <p>Gertaera bakoitzeko, kalkulatu:</p>
         <p>
             <ul>
-                <li>Earliest Event Time (EET)</li>
-                <li>Latest Event Time (LET)</li>
+                <li>Earliest Event Time (EET): hasieratik hurbilen dagoen unea jarduera hasteko</li>
+                <li>Latest Event Time (LET): amaieratik hurbilen dagoen unea jarduera hasteko proiektua atzeratu barik</li>
             </ul>
         </p>
     </section>
@@ -237,7 +237,7 @@
                 <li>Gainontzeko gertaerentzako:
                     <ul>
                         <li>Gertaerara iristen den jarduera bakoitzeko, batu jardueraren iraupena eta jarduera irten den gertaeraren EET-a</li>
-                        <li>Aukeratu lortutako EET-rik handiena</li>
+                        <li>Batzuk egotekotan, aukeratu lortutako EET-rik handiena</li>
                     </ul>
                 </li>
             </ul>
@@ -245,7 +245,7 @@
     </section>
 
     <section class="slide" id="cover">
-        <h2>Planifikazioa (PERT): EET/h2>
+        <h2>Planifikazioa (PERT): EET</h2>
         <p><img src="pictures-gp-31/EET.png" alt="PERT EET" width="80%"></p>
     </section>
 
@@ -255,11 +255,11 @@
         <p>Gertaera bakoitzeko, kalkulatu:</p>
         <p>
             <ul>
-                <li>Hasierako gertaeraren LET-a bere EET-a da</li>
+                <li>Amaierako gertaeraren LET-a bere EET-a da</li>
                 <li>Gainontzeko gertaerentzako:
                     <ul>
                         <li>Gertaeratik irtetzen den jarduera bakoitzaren LET-a iristen den gertaerari kendu</li>
-                        <li>Aukeratu lortutako LET-ik txikiena</li>
+                        <li>Batzuk egotekotan, aukeratu lortutako LET-ik txikiena</li>
                     </ul>
                 </li>
             </ul>
