@@ -224,18 +224,8 @@
         <h2>Proiektuaren errentagarritasuna</h2>
         <p>Proiektuen errentagarritasuna konparatzeko beharrezkoa da guztiak egoera berdinetan egotea
             <ul>
-                <li>Metodo estatikoak:
-                    <ul>
-                        <li>Berreskurapen-epe sinplea</li>
-                        <li>Inbertsioaren errentagarritasuna (ROI)</li>
-                    </ul>
-                </li>
-                <li>Metodo dinamikoak:
-                    <ul>
-                        <li>Eguneratutako Balio Garbia (EBG)</li>
-                        <li>Barne Errendimendu Tasa (BET)</li>
-                    </ul>
-                </li>
+                <li>Metodo estatikoak: Berreskurapen-epe sinplea, Inbertsioaren errentagarritasuna (ROI)</li>
+                <li>Metodo dinamikoak: Eguneratutako Balio Garbia (EBG), Barne Errendimendu Tasa (BET)</li>
             </ul>
         </p>
     </section>
@@ -244,9 +234,8 @@
         <h2>Proiektuaren errentagarritasuna</h2>
         <p>Berreskurapen-epe sinplea:
             <ul>
-                <li>Inbertsioa berreskuratzeko bearrezkoa den denbora-tarte kopurua</li>
+                <li>Inbertsioa berreskuratzeko beharrezkoa den denbora-tarte kopurua</li>
                 <li>Honakoa betetzen duen r baliorik txikiena da:
-
                     \[ INB\leq \sum_{j=1}^r KF_j\]
                 </li>
                 <li>INB: egindako inbertsioa; KF<sub>j</sub>: kutxa fluxua </li>
@@ -264,7 +253,11 @@
                 <li>3. urtea: KF3 = 600</li>
             </ul>
         </p>
-        <p>Emaitza:
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Proiektuaren errentagarritasuna</h2>
+        <p>berreskurapen-epe sinplea:
             <ul>
                 <li>1 urte? : 1000<=600? EZ</li>
                 <li>2 urte? : 1000<=600+550? BAI</li>
@@ -329,7 +322,85 @@
                 <li>110€ itzuliko dizkidate (etorkizunean)</li>
             </ul>
         </p>
+    </section>
 
+    <section class="slide" id="cover">
+        <h2>Oraingo 1000€ %20 interesarekin:</h2>
+        <p><img src="pictures-gp-31/interes.png" alt="Oraingo 1000€ %20 interesarekin" width="60%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Etorkizuneko 1000€ orain ikusita (Astean %0.4)</h2>
+        <p><img src="pictures-gp-31/interes-reves.png" alt="Etorkizuneko 1000€ orain ikusita (Astean %0.4)" width="60%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Proiektuaren errentagarritasuna</h2>
+        <p>Barne Errendimenduko Tasa (BET)</p>
+        <p>Eguneratutako kutxa-fluxua inbertsioaren kostuarekin berdintzen duen tasa(r):
+            \[ INB = \sum_{j=1}^n {KF_j \over (1+r)^j} \]
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Proiektuaren errentagarritasuna</h2>
+        <p>Barne Errendimenduko Tasa (BET)</p>
+        <p>Proiektu bat bideragarria izateko: r > interes-tasa</p>
+        <p>Zenbat eta r handiagoa izan, inbertsioa hobeagoa izango da</p>
+        <p>Kutxa-fluxu negatiboekin moldatu behar da (ez dugu ikusiko)</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Proiektuaren errentagarritasuna</h2>
+        <p>Barne Errendimenduko Tasa (BET)</p>
+        <p>Kalkulatu BET ondorengo inbertsio-proiektuarentzat:
+            <ul>
+                <li>INB=100</li>
+                <li>1. urtea: KF1=20</li>
+                <li>2. urtea: KF2=160</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Proiektuaren errentagarritasuna</h2>
+        <p>Emaitza:
+            \[ 100 = {20 \over 1+r } + {160 \over (1+r)^2} \]
+            \[ 100(1+r)^2 - 20(1+r) - 160 = 0 \]
+            \[ r = {20+253,77 \over 200}-1 = 0,369 \]
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Proiektuaren errentagarritasuna</h2>
+        <p>Eguneratutako Balio Garbia (EBG)</p>
+        <p>Irabazien balio garbia, balio eguneratuak kontuan hartuz:
+            \[ EBG=-INB+\sum_{j=1}^n{KF_j \over (1+r)^j} \]
+        </p>
+        <p>Proiektua bideragarria izateko: EBG>0</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Proiektuaren errentagarritasuna</h2>
+        <p>Eguneratutako Balio Garbia (EBG)</p>
+        <p>Kalkulatu EBG honako inbertsio-proiektuarentzat:
+            <ul>
+                <li>INB=100</li>
+                <li>Errendimendu tasa:10%</li>
+                <li>1. urtea: KF1=20</li>
+                <li>2. urtea: KF2=60</li>
+                <li>3. urtea: KF3=55</li>
+                <li>4. urtea: Q4=80</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Proiektuaren errentagarritasuna</h2>
+        <p>Eguneratutako Balio Garbia (EBG)</p>
+        <p>Emaitza:
+            \[ EBG=-100+{20 \over (1+0,1)}+{60 \over (1+0,1)^2}+{55 \over (1+0,1)^3}+{80 \over (1+0,1)^4}=63,73 \]
+        </p>
     </section>
 
     <!-- FOOTER -->
