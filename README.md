@@ -12,6 +12,6 @@ Gaiak:
 4. Helburuak eta norainokoa
 5. Estimazioa
 6. [Denboraren kudeaketa](DenborarenKudeaketa/index.html)
-7. Arriskuak
+7. [Arriskuak](Arriskuak/index.html)
 8. [Ebaluaketa ekonomikoa](EbaluaketaEkonomikoa/index.html)
 9. Jarraipena eta kontrola
