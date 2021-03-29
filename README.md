@@ -14,4 +14,4 @@ Gaiak:
 6. [Denboraren kudeaketa](DenborarenKudeaketa/index.html)
 7. [Arriskuak](Arriskuak/index.html)
 8. [Ebaluaketa ekonomikoa](EbaluaketaEkonomikoa/index.html)
-9. Jarraipena eta kontrola
+9. [Jarraipena eta kontrola](JarraipenaEtaKontrola/index.html)
